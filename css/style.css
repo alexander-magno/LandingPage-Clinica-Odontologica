@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Classes Auxiliares*/
+.clear{clear: both;}
+.container{max-width: 960px;padding: 0 2%;margin: 0 auto;}
+
+/*Header - Inicio*/
+section.header-master{
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url('../img/bg_01.png');
+    background-size: cover;
+    
+}
+
+section.header-master header {
+    border-bottom: 3px solid rgba(71, 83, 88, 0.14);
+    padding-bottom: 80px ;
+}
+
+div.logo{
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin-top: -50px;
+    background-image: url('../img/Logomarca_dentista_azul_e_branco_post_instagram-removebg-preview.png');
+    background-size: 100% 100%;
+}
+
+nav.menu-mobile {
+    display: none;
+    float: right;
+
+}
+nav.menu-mobile h3 {
+    color: white;
+}
+nav.menu-mobile span{
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+nav.menu-mobile span:hover {
+    background-color: #04c49a;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 60;
+    left: -0px;
+    list-style-type: none;
+    background-color: #04c49a;
+
+}
+nav.menu-mobile ul li {
+    text-align: center;
+    padding: 20px 0;
+    border: 1px solid white;
+}
+nav.menu-mobile ul li:hover {
+    background-color: #6cc5b2;
+    transition: 0.4s;
+}
+nav.menu-mobile ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header nav.desktop {
+    float: left;
+    padding-left: 60px;
+}
+header nav.desktop ul{
+    list-style-type: none;
+}
+header nav.desktop ul li {
+    display: inline;
+    padding: 0 15px;
+    font-size: 16px;
+    color: white;
+}
+
+header nav.desktop ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+li.selected{
+    color: #509d87;
+    position: relative;
+}
+li.selected > span{
+    position: absolute;
+    bottom: -2px;
+    
+    width: 50px;
+    height: 5px;
+    background-color: #509d87;
+}
+
+div.telefone-header {
+    float: left;
+    position: relative;
+    top: -3px;
+}
+
+div.telefone-header span{
+    font-size: 22px;
+    color: white;
+}
+
+/*Header - Fim*/
+
+/*Content header Inicio*/
+.content-header {
+    margin: 60px 0;
+    
+}
+.content-header .one {
+    float: left;
+    width: 50%;
+    margin-top: 60px;
+}
+
+.content-header .one h2 {
+    color: #509d87;
+    font-weight: normal;
+    font-size: 37px;
+}
+.content-header .one p{
+    padding: 15px 0;
+}
+.content-header .one form input{
+    display: inline-block;
+}
+.content-header .one form input[type=email]{
+    width: 251px;
+    height: 60px;
+    border: 2px solid #ccc;
+    margin: 10px 0;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+.content-header .one form input[type=email]:focus{
+    outline: 0;
+}
+.content-header .one form input[type=submit]{
+    background-color: #00daaa;
+    color: white;
+    font-size: 17px;
+    border: 0;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.content-header .one form input[type=submit]:hover{
+    background-color: #509d87;
+}
+
+.content-header .one span {
+    color: #509d87;
+    font-size: 17px;
+    margin-top: 20px;
+    display: block;
+}
+
+.content-header .two{
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+.content-header .two img{
+    float: left;
+    width: 50%;
+    border: 10px solid rgba(0, 0, 0, 0);
+}
+
+/*Content header Fim*/
+
+/*Section Diferenciais INicio*/
+
+section.diferenciais {
+    padding: 40px 0;
+}
+
+section.diferenciais > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.diferencial-single {
+    width: 33.3%;
+    margin-bottom: 50px;
+}
+.diferencial-single img {
+    max-width: 100%;
+}
+.diferencial-single h2{
+    color: #2d2d2d;
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.diferencial-single h2 > b {
+    color: #00daaa;
+}
+.diferencial-single p {
+    
+    color: #2d2d2d;
+    font-weight: bold;
+}
+
+/*Section Diferenciais Fim*/
+
+/*Section Sobre Inicio*/
+section.sobre {
+    margin-top: 30px;
+}
+
+section.sobre > .container {
+    max-width: 1280px;
+}
+
+.sobre-container {
+    float: left;
+    width: 50%;
+}
+.sobre-container img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.sobre-container h2 {
+    font-size: 33px;
+    margin: 10px 0;
+    color: #a9c4b8;
+    font-weight: normal;
+}
+.sobre-container h2 > b {
+    color: #03ca9f;
+
+}
+.sobre-container p{
+    font-size: 15px;
+}
+
+.padsobre {
+    padding: 10px 50px;
+}
+
+/*Section Sobre Fim*/
+
+/*Section Depoimentos Inicio*/
+section.depoimento{
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    background-image: url('../img/bg_Invert.png');
+    background-size: cover;
+    
+    
+}
+section.depoimento h2 {
+    text-align: center;
+    font-size: 29px;
+    color: #2d2d2d;
+}
+section.depoimento_2 {
+    position: relative;
+    z-index: -99;
+    top: -100px;
+    min-height: 200px;
+    padding-bottom: 200px;
+    background-image: url('../img/bg_01.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+/*Section Depoimentos Fim*/
+/*Section Etapas Inicio*/
+
+section.etapas {
+    padding: 40px 0;
+}
+
+section.etapas > .container {
+    max-width: 1200px;
+}
+section.etapas h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+
+section.etapas h2 > mark{
+    color: #00daaa;
+    background-color: transparent;
+}
+.etapas__single {
+    float: left;
+    width: 50%;
+}
+
+
+.etapas__round img{
+    max-width: 100%;
+    float: left;
+}
+.etapas__round p{
+    float: left;
+    padding-top: 100px;
+    padding-left: 20px;
+    color: #03ca9f;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.etapas__group2{
+    margin-bottom: 40px;
+}
+
+.etapas__group2 .circle {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.etapas__group2 .circle:hover {
+    background-color: rgba(0,218,170,0.1);
+    transition: 0.7s;
+    
+}
+.circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.etapas_descricao {
+    float: left;
+    width: calc(100% - 100px);
+    padding: 0 20px;
+}
+.etapas_descricao h3 {
+    color: #03ca9f;
+    font-size: 18px;
+}
+.line {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    z-index: 999999;
+    transform: translate(-50%, 0);
+    height: 55px;
+    width: 2px;
+    background-color: #ccc;
+}
+
+/*Section Etapas Fim*/
+
+/*Section Diferencas Inicio*/
+section.diferencas{
+    padding-bottom: 50px;
+}
+
+section.diferencas > .container {
+    max-width: 800px;
+    text-align: center;
+}
+
+.diferencas__single{
+    float: left;
+    width: 50%;
+    
+}
+
+.diferencas__single > img {
+    max-width: 150px;
+    margin-top: -20px;
+    
+
+}
+
+.diferencas__single:first-child{
+    border-right: 2px solid #03ca9f;
+}
+.diferencas__single h2,
+.item-diferencas-1{
+    color: #b9b8b8;
+}
+.diferencas__single h2{
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.item-diferencas-1 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+}
+.item-diferencas-2 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: #03ca9f;
+}
+.line-diferenca-1 {
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    width: 100%;
+    transform: rotate(-3deg);
+    height: 2px;
+    background-color: red;
+}
+
+/*Section Diferencas Fim*/
+/*Section Contato Inicio*/
+section.contato {
+    padding: 40px 0;
+    background-color: #98fcde;
+}
+section.contato > .container {
+    max-width: 800px;
+}
+section.contato h2 {
+    text-align: center;
+    color: #03ca9f;
+}
+section.contato .form-group{
+    margin-bottom: 15px;
+    
+}
+section.contato label {
+    color: #03ca9f;
+}
+
+section.contato input[type=text],[type=email],[type=tel] {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    padding-left: 10px;
+    margin-top: 10px;
+    outline: 0;
+}
+section.contato textarea{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+    outline: 0;
+}
+section.contato input[type=submit]{
+    width: 250px;
+    height: 60px;
+    background-color: #509d87;
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    
+}
+
+section.contato input[type=submit]:hover{
+    background-color: #04c49a;
+    transition: 0.5s;
+}
+.form-group:last-child {
+    text-align: center;
+}
+
+/*Section Contato Fim*/
+/*Foooter Inicio*/
+footer {
+    background-color: #6cc5b2;
+}
+
+footer > .container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+.footer-single {
+    float: left;
+    width: calc(100% / 3);
+    padding: 30px 0;
+}
+.footer-single:first-child {
+    margin-top: -30px;
+}
+.footer-single h2 {
+    color: white;
+    font-size: 22px;
+}
+.footer-single p {
+    color: white;
+    font-size: 14px;
+}
+.footer-single img {
+    max-width: 150px;
+    
+}
+
+/*Foooter Fim*/
+
+/*Midias Query*/
+
+@media screen and (max-width: 900px) {
+    .sobre-container {
+        width: 100%;
+        text-align: center;
+    }
+    .sobre-container img {
+        width: 400px;
+        height: 300px;
+    }
+    .padsobre {
+        padding: 0;
+    }
+    .content-header .one{
+        text-align: center;
+        width: 100%;
+    }
+    .content-header .two {
+        display: none;
+    }
+    .telefone-header {
+        display: none;
+    }
+    nav.desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
+    .diferencial-single {
+        width: 100%;
+        text-align: center;
+        border-bottom: 3px solid #509d87;
+    }
+    .sobre-container {
+        width: 100%;
+    }
+    .padsobre {
+        padding: 0;
+    }
+
+    .etapas__single{
+        width: 100%;
+    }
+    .etapas__round{
+        display: none;
+    }
+    .etapas__group2 {
+        width: 100%;
+        display: block;
+        float: none;
+    }
+    .line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .diferencas__single{
+        float: left;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-right: 0 !important;
+    }
+    .line-border {
+        width: 100%;
+        height: 2px;
+        background-color: #00daaa;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .footer-single {
+        width: 100%;
+        float: 0;
+        text-align: center;
+    }
+}
+
